@@ -1,24 +1,26 @@
 #include <stdio.h>
 
 /**
- * main- this main function for number
- * Return:0
+ * main- this is the main function
+ * numbers
+ * Return: Always 0
  */
+
 
 int main(void)
 {
+	int d;
 
-int n;
+	for (d = 0; d <= 9; d++)
+	{
+		putchar(d);
+		if (d != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
 
-for (n = 48; n < 58; n++)
-putchar(n);
-if (n != 57)
-{
-putchar(',');
-putchar('');
-}
-
-putchar('\n');
-
-return (0);
+	return (0);
 }
