@@ -10,22 +10,25 @@
 
 int main(void)
 {
-	int a, b;
+	int d, p;
 
-	for (a = '0'; a <= '9'; a++)
+	for (d = '0'; d <= '9'; d++)
 	{
-		for (b = a; b <= '9'; b++)
-		{
-			if(a != b)
-			{
-				putchar(a);
-				putchar(b);
-				putchar(',');
-				putchar(' ');
-			}
-		}
+	for (p = '0'; p <= '9'; p++)
+	{
+	if (d < p)
+	{
+	putchar(d);
+	putchar(p);
+	if (d != '8' || (d == '8' && p != '9'))
+	{
+	putchar(',');
+	putchar(' ');
+	}
+	}
+	}
 	}
 	putchar('\n');
-
 	return (0);
 }
+
