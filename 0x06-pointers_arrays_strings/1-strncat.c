@@ -1,5 +1,7 @@
 #include "main.h"
 #include <string.h>
+#include <stdio.h>
+
 
 /**
  * _strncat - A function that joins two strings
@@ -17,9 +19,9 @@ char *_strncat(char *dest, char *src, int n)
 
 	for (i = 0; i < n && *src != '\0'; i++)
 	{
-		dest[len + 1] = *src;
+		dest[len + i] = *src;
 		src++;
 	}
-	dest[len + 1] = '\0';
+	dest[len + i] = '\0';
 	return (dest);
 }
