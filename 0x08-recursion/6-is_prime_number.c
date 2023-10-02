@@ -3,10 +3,10 @@
 
 
 /**
- * is_divisible - its calculate a prin nubmer
+ * is_divisible - Calculate the prime number
  * @n : enter value
  * @divisor: to divide n
- * Reutrn:is_diviible
+ * Return:is_diviible
  */
 
 
