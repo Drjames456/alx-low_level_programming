@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 
 /**
@@ -19,7 +20,7 @@ char *create_array(unsigned int size, char c)
 
 
 	charArray = malloc(sizeof(char) * size);
-	if (charArray == NULL || charArray == NULL)
+	if (size == 0 || charArray == NULL)
 		return (NULL);
 
 	for (i = 0; i < size; i++)
