@@ -1,4 +1,3 @@
-julien@ubuntu:~/0x0a. malloc, free$ cat 4-main.c
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,6 +17,7 @@ void print_grid(int **grid, int width, int height)
 
 
 	h = 0;
+
 	while (h < height)
 	{
 		w = 0;
@@ -38,6 +38,8 @@ void print_grid(int **grid, int width, int height)
 int main(void)
 {
 	int **grid;
+
+
 	grid = alloc_grid(6, 4);
 	if (grid == NULL)
 	{
