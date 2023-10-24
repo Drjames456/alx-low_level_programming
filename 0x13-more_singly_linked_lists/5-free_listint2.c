@@ -13,17 +13,19 @@
 
 void free_listint2(listint_t **head)
 {
-	listint_t *tmp;
+	listint_t *temp, *node;
 
 	if (head == NULL)
 		return;
 
 
 
+	node = *head;
 	while (head)
 	{
-		tmp = (*head)->next;
-		free(*head);
-		*head = tmp;
+		temp = node;
+		node = node->next;
+		free(temp);
 	}
+	*head = NULL;
 }
